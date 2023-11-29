@@ -1,4 +1,4 @@
-function [test_accuracy,indx] = RVFL_predict(X,Y,model)
+function [test_accuracy,indx] = GE_IFRVFL_CIL_Predict(X,Y,model)
 
 beta = model.beta;
 W = model.W;
