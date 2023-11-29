@@ -1,4 +1,4 @@
-function [S1,S2,alpha_d,mew]=non_linear_score_values(A,mew)
+function [S1,S2,alpha_d,mew]=IF_non_linear_score_values(A,mew)
 [no_input,no_col]=size(A);
 A1=A(A(:,end)==1,1:end-1);
 B1=A(A(:,end)~=1,1:end-1);
