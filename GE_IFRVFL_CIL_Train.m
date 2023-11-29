@@ -1,4 +1,4 @@
-function [model,train_accuracy] = IFW_RVFL_train_CIL(trainX,trainY,option)
+function [model,train_accuracy] = GE_IFRVFL_CIL_Train(trainX,trainY,option)
 
 N = option.N;
 C = option.C;
@@ -7,7 +7,7 @@ s = option.scale;
 
 option.mu=option.kerfPara.pars;
 tic
-[S1,S2]=non_linear_score_values([trainX,trainY],option.mu);
+[S1,S2]=IF_non_linear_score_values([trainX,trainY],option.mu);
 time1=toc;
 A1=trainX(trainY==1,:);
 B1=trainX(trainY~=1,:);
